@@ -14,9 +14,10 @@ add_project_arguments('-Wwrite-strings', language : ['c'])
 
 clox_static_lib = static_library(
   'clox_static_lib',
-  'src/opcode.c',
   'src/chunk.c',
   'src/memory.c',
+  'src/opcode.c',
+  'src/value.c',
 )
 
 clox_dep = declare_dependency(

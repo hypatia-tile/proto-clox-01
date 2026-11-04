@@ -2,6 +2,7 @@
 #define clox_chunk_h
 
 #include "common.h"
+#include "src/value.h"
 
 /**
  * @brief A sequence of bytecode virtual machine can execute.
@@ -13,13 +14,16 @@
 typedef struct {
   clox_count_t count;    ///< Count of bytes in the dynamic array @ref code.
   clox_count_t capacity; ///< Allocated size of dynamic array.
-  uint8_t *code;         ///< Dynamic array of instructions
-  int *lines; ///< Dynamic array of line numbers corresponding to each
+  uint8_t *code;         ///< Dynamic array of instructions.
+  ValueArray constants; ///< Constants pool.
+  int *lines; ///< Dynamic array of line numbers corresponding to each.
               ///< instruction in @ref code.
 } Chunk;
 
 void initChunk(Chunk *chunk);
 void writeChunk(Chunk *chunk, uint8_t byte, int line);
 void freeChunk(Chunk *chunk);
+
+int addConstant(Chunk *chunk, Value value);
 
 #endif // clox_chunk_h

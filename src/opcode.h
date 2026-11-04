@@ -4,6 +4,7 @@
 #include <stdint.h>
 
 typedef enum : uint8_t {
+  OP_CONSTANT,
   OP_RETURN,
 } Opcode;
 
