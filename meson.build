@@ -18,6 +18,7 @@ clox_static_lib = static_library(
   'src/memory.c',
   'src/opcode.c',
   'src/value.c',
+  'src/debug.c',
 )
 
 clox_dep = declare_dependency(
@@ -38,9 +39,10 @@ exe = executable(
 )
 
 test_sources = [
-  'test/test_opcode.c',
   'test/test_check.c',
+  'test/test_chunk.c',
   'test/test_memory.c',
+  'test/test_opcode.c',
 ]
 
 test_exe = executable(
