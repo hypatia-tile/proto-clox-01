@@ -150,6 +150,11 @@ expected)* are the candidates.
 
 ## Progress
 
+**Retired on 2026-11-08 with Step 1 unfinished** — see
+[`retrospective.md`](retrospective.md). ch14.4-14.6 were written and pushed but
+never reviewed; #11 and #9 were closed unfinished. What follows is the state as
+it stood before that.
+
 **Step 1 is in progress. The next thing to do is #11** — 14.4 the disassembler,
 then 14.5 constants, then 14.6 line information. Its body states where the code
 stands and what is left; nothing else is open against Step 1.

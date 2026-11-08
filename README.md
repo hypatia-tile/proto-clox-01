@@ -8,8 +8,10 @@ Built in C23 with meson, in a Nix flake dev shell.
 
 ## Status
 
-Not started. See [`docs/roadmap.md`](docs/roadmap.md) for the step list and the
-working contract.
+**Retired and archived** on 2026-11-08, partway through Step 1 (ch14). See
+[`docs/retrospective.md`](docs/retrospective.md) for where it stopped and what
+is worth carrying over. [`docs/roadmap.md`](docs/roadmap.md) has the step list
+and the working contract.
 
 ## Building
 
